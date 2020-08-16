@@ -9,7 +9,8 @@ class Post(models.Model):
     body = models.TextField() # 추후 콘텐츠에 따라 수정 예정
     pub_date = models.DateTimeField('date published')
     target_amount = models.IntegerField(default=10000)
-
+    thumbnail = models.ImageField(default='test_img.jpg')
+    
     def __str__(self):
         return self.title
 

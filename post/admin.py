@@ -5,7 +5,7 @@ from .models import Post, Content
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ['id', 'title', 'body', 'pub_date', 'target_amount']
+    list_display = ['id', 'title', 'body', 'pub_date', 'target_amount','thumbnail']
     list_display_links = ['id', 'title']
 
     # def content_size(self, post):
