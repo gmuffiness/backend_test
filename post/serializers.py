@@ -11,4 +11,4 @@ class ContentSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Content
-        fields = ('title','link')#,'image')
+        fields = ('title','link','image')

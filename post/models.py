@@ -19,4 +19,4 @@ class Post(models.Model):
 class Content(models.Model):
     title = models.CharField(max_length=200)
     link = models.TextField()
-    # image = models.ImageField(default='media/test_img.jpg')
+    image = models.ImageField(default='test_img.jpg')

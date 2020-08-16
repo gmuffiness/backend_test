@@ -13,5 +13,5 @@ class PostAdmin(admin.ModelAdmin):
     # content_size.short_description = '글자수'
 @admin.register(Content)
 class ContentAdmin(admin.ModelAdmin):
-    list_display = ['id', 'title', 'link']
+    list_display = ['id', 'title', 'link','image']
     list_display_links = ['id', 'title']
